@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Reservas Makaira 605A</title>
+  <!-- Enlaza tu archivo CSS -->
+  <link rel="stylesheet" href="./styles/stylesGPT.css">
+
+  <!-- Aquí vamos a incluir los CDN de los calendarios -->
+  <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.9/index.global.min.js'></script>
+
+</head>
+<body>
+  <header>
+    <h1>Reservaciones Makaira 605A</h1>
+  </header>
+  <main>
+    <section class="main-booking-container">
+      <h2>Reservar Apartamento</h2>
+      <form id="reservaForm" class="main-booking-form">
+        <div class="main-booking-form-fields">
+
+          <div class="booking-form-blocks">
+            <label class="entry-title" for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+          </div>
+          <div class="booking-form-blocks">
+            <label class="entry-title" for="fechaLlegada">Fecha de Llegada:</label>
+            <input type="date" id="fechaLlegada" name="fechaLlegada" required>
+          </div>
+          <div class="booking-form-blocks">
+            <label class="entry-title" for="fechaSalida">Fecha de Salida:</label>
+            <input type="date" id="fechaSalida" name="fechaSalida" required>
+          </div>
+          <div class="booking-form-blocks">
+            <label class="entry-title" for="numPersonas">Número de Personas:</label>
+            <input type="number" id="numPersonas" name="numPersonas" required>
+          </div>
+
+        </div>
+        <div class="main-booking-form-button">
+            <button type="submit">Enviar Reserva</button>
+        </div>
+
+      </form>
+    </section>
+    <section class="main-reservations-container">
+      <h2>Reservas Actuales</h2>
+      <!-- Aquí mostrarás las reservas existentes -->
+      <div id="calendar-container"></div>
+    </section>
+  </main>
+  <footer>
+    Hecho por Felipe con amor
+  </footer>
+  <script src="./scripts/scriptsGPT.js"></script> <!-- Enlaza tu archivo JS -->
+</body>
+</html>

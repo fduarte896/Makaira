@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+}
+
+#navigation_bar li{
+    display: inline-block;
+}
+
+#navigation_bar a{
+    text-decoration: none;
+    color: black;
+    background-color: antiquewhite;
+    border-radius: 5px;
+}
